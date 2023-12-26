@@ -7,5 +7,12 @@
     </head>
     <body>
         Hello <p>${name}</p>. Welcome to the system!
-        </body>
+
+        <!-- Href links -->
+        <ul>
+            <li><a href="ElectricityConsumption.jsp">Electricity Consumption</a></li>
+            <li><a href="RecyclingActivity.jsp">Recycling Activity</a></li>
+            <li><a href="WaterConsumption.jsp">Water Consumption</a></li>
+        </ul>
+    </body>
 </html>
