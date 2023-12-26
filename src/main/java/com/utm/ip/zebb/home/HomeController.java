@@ -9,4 +9,19 @@ public class HomeController {
     public String greet(){
         return "home";
     }
+
+    @RequestMapping("/register")
+    public String register(){
+        return "registration";
+    }
+    
+    @RequestMapping("/login")
+    public String login(){
+        return "home";
+    }
+
+    @RequestMapping("/editprofile")
+    public String editprofile(){
+        return "editprofile";
+    }
 }
