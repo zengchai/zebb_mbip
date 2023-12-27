@@ -55,4 +55,24 @@ public class HomeController {
     public String waterbill() {
         return "UploadWater";
     }
+    @RequestMapping("/pertandinganadmin2")
+    public String pertandinganadmiin2(){
+        return "pertandinganadmin2";
+    }
+        @RequestMapping("/reportcalculation")
+    public String reportcalculation(){
+        return "reportcalculation";
+    }
+        @RequestMapping("/reportviewanalysis")
+    public String reportviewanalysis(){
+        return "reportviewanalysis";
+    }
+        @RequestMapping("/timeline")
+    public String timeline(){
+        return "timeline";
+    }
+        @RequestMapping("/pertandinganadmin")
+    public String pertandinganadmin(){
+        return "pertandinganadmin";
+    }
 }
