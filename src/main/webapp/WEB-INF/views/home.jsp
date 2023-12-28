@@ -35,7 +35,8 @@
             <li><a href="/timeline">Timeline</a></li>
             <li><a href="/reportviewanalysis">Adminview report analysis</a></li>
             <li><a href="/reportcalculation">Adminview report calculation</a></li>
-            
+            <li><a href="/competitionUser">userview pertandingan</a></li>
+            <li><a href="/certificate">certificate</a></li>
         </ul>
     </body>
 </html>

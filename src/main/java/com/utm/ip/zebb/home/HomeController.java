@@ -76,9 +76,9 @@ public class HomeController {
         return "pertandinganadmin";
     }
 
-    @RequestMapping("/competitionuser")
+    @RequestMapping("/competitionUser")
     public String competitionuser(){
-        return "competitionuser";
+        return "competitionUser";
     }
 
     @RequestMapping("/certificate")
