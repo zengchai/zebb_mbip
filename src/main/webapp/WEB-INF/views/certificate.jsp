@@ -25,7 +25,7 @@
                 </div>
 
                 <div class="image-container">
-                    <img src="/assets/certificateIMG/image certificates.png" alt="Your certificate">
+                    <img src="/asset/certificateIMG/image certificates.png" alt="Your certificate">
                     <a href="#" class="download-button" style="text-decoration: none;">Download</a>
                 </div>
             </div>
