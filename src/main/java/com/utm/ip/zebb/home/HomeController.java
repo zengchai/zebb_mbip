@@ -79,4 +79,14 @@ public class HomeController {
     public String uploadic(){
         return "uploadic";
     }
+
+    @RequestMapping("/competitionUser")
+    public String competitionuser(){
+        return "competitionUser";
+    }
+
+    @RequestMapping("/certificate")
+    public String certificate(){
+        return "certificate";
+    }
 }
