@@ -75,4 +75,8 @@ public class HomeController {
     public String pertandinganadmin(){
         return "pertandinganadmin";
     }
+            @RequestMapping("/uploadic")
+    public String uploadic(){
+        return "uploadic";
+    }
 }
