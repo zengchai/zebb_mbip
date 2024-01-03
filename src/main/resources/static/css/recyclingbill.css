@@ -68,7 +68,6 @@ aside {
     flex: 1;
     background-color: #fff;
     justify-content: space-between;
-    overflow: hidden; /* Prevent content overflow */
 }
 
 .left-container {

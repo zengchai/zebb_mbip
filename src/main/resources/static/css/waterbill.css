@@ -6,7 +6,6 @@ body, h1, p{
 body {
     font-family: Arial, sans-serif;
     background-color: #f1f1f1;
-    overflow: hidden; /* Prevent scrolling */
 }
 
 header {

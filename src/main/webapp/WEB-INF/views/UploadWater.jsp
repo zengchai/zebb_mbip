@@ -6,16 +6,10 @@
     <title>Upload Water Bill Page</title>
     <link rel="stylesheet" type="text/css" href="/css/waterbill.css">
 </head>
-<body>
-    <header>
-        Water bill  
-    </header>
-    <main>
-        <aside>
-
-            
-        </aside>
-        <div class="main-content">
+    <jsp:include page="header.jsp" />    
+<main>
+    <div class="main-content">
+        <jsp:include page="userSideBar.jsp" />
             <div class="left-container">
                 <div class="logo-container">
                     <img src="/asset/back.png" alt="Back Logo" class="logo">
