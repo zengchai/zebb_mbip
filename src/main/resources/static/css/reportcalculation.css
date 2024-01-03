@@ -1,134 +1,135 @@
+.main-container {
+    display: flex;
+    flex-direction: row;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
 
-h4 {
-    font-weight: normal; /* or use font-weight: 400; */
+.container {
+    /* width: 640px; 
+    max-width: 100%; Ensure it doesn't exceed the specified width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h3 {
     margin: 0rem;
-    padding-left: 2rem;
-    }
+}
+.carbon,.water,.electric,.recycle {
+    width: 97%;
+    /* Adjust width and margin as needed */
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #000;
+    border-radius: 0.5rem;
+}
 
-    h3{
-        margin: 0rem;
-    }
+.title h2 {
+    text-decoration: underline;
+}
 
-    body {
-        margin: 0;
-        padding: 0;
-        display: flex;
-        align-items: left;
-        justify-content: center;
-        height: 680px; /* Set the desired height */
-    }
+.third-row {
+    display: flex;
+    justify-content: space-between;
+    width: 98%;
+}
 
-    .container {
-        width: 640px; /* Set the desired width */
-        max-width: 100%; /* Ensure it doesn't exceed the specified width */
-    }
-    .carbon,
-    .recycle,
-    .water,
-    .electric {
-        border: 1px solid #000;
-        margin: 10px;
-        padding: 10px;
-        box-sizing: border-box;
-        border-radius: 0.5rem;
-    }
+.carbon,.recycle {
+    width: 97%;
+}
 
-    .carbon,
-    .recycle {
-        width: 97%;
-    }
-
-    .water,
-    .electric {
-        width: 45%;
-        display: inline-block;
-        box-sizing: border-box;
-        height: 10rem;
-    }
+.water,.electric {
+    width: 48%;
+    box-sizing: border-box;
+    height: 10rem;
+}
 
 
+.electric {
+    float: right;
+}
 
-    .carbon,
-    .water, .recycle {
-        float: left;
-    }
+.formula {
+    display: inline-block;
+    /* Keep the formula in the same line */
+    margin-top: 10px;
+    /* Add margin at the top as needed */
+    text-align: center;
+    margin-left: 5rem;
+}
 
-    .electric
-    {
-        float: right;
-    }
+.Cformula,.ans {
+    display: inline-block;
+    vertical-align: top;
+    /* Align elements vertically at the top */
 
-    .carbon,
-    .water,
-    .electric,
-    .recycle {
-        border: 1px solid #000;
+}
 
-        box-sizing: border-box;
-    }
-    .carbon {
-        text-align: left; /* Center-align text within the .carbon div */
-    }
+.Cformula {
+    margin-right: 10px;
+    /* Adjust margin as needed */
+}
 
-    .formula {
-        display: inline-block; /* Keep the formula in the same line */
-        margin-top: 10px; /* Add margin at the top as needed */
-        text-align: center;
-        margin-left: 5rem;
-    }
+.ans {
+    font-size: 18px;
+    /* Adjust font size as needed */
+}
 
-    .Cformula,
-    .ans {
-        display: inline-block;
-        vertical-align: top; /* Align elements vertically at the top */
-        
-    }
+.wformula p {
+    text-align: center;
+    font-size: 1rem;
+}
 
-    .Cformula {
-        margin-right: 10px; /* Adjust margin as needed */
-    }
+.wans {
+    text-align: right;
+}
 
-    .ans {
-        font-size: 18px; /* Adjust font size as needed */
-    }
-    .wformula p{
-        text-align: center;
-        font-size: 1rem;
-    }
-    .wans{
-        text-align: right;
-    }
-    .eformula {
-        text-align: center;
-        font-size: 1rem;
-    }
-    .eans{
-        text-align: right;
-        padding-top: 0.5rem;
-    }
-    .rformula {
-        text-align: center;
-        font-size: 1rem;
-    }
-    .rans{
-        text-align: right;
-        
-    }
-    .button-container {
-        text-align: center;
-    }
+.eformula {
+    text-align: center;
+    font-size: 1rem;
+}
 
-    .calculate-button {
-        background-color: #DDEBE6; /* Green background color */
-        color: #183D3D; /* White text color */
-        padding: 8px 30px; /* Padding for the button */
-        border: none; /* No border */
-        border-radius: 8px; /* Border radius for rounded corners */
-        font-size: 16px; /* Font size */
-        cursor: pointer; /* Cursor style on hover */
-    }
+.eans {
+    text-align: right;
 
-    .calculate-button:hover {
-        background-color: #78d3b3; /* Darker green color on hover */
-    }
-    
+}
+
+.rformula {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.rans {
+    text-align: right;
+
+}
+
+.button-container {
+    text-align: center;
+}
+
+.calculate-button {
+    background-color: #DDEBE6;
+    /* Green background color */
+    color: #183D3D;
+    /* White text color */
+    padding: 8px 30px;
+    /* Padding for the button */
+    border: none;
+    /* No border */
+    border-radius: 8px;
+    /* Border radius for rounded corners */
+    font-size: 16px;
+    /* Font size */
+    cursor: pointer;
+    /* Cursor style on hover */
+}
+
+.calculate-button:hover {
+    background-color: #78d3b3;
+    /* Darker green color on hover */
+}

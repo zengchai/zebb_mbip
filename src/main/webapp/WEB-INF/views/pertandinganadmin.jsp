@@ -12,40 +12,43 @@
         <style> 
         </style>
     </head>
+    <% ArrayList<String> resident= new ArrayList<String>();
+        resident.add("Tia");
+        resident.add("Suhaib");
+        resident.add("Yong");%>
+    <% ArrayList<String> location= new ArrayList<String>();
+        location.add("Taman Jelita");
+        location.add("Taman U");
+        location.add("Taman Wang");%>
+    <% ArrayList<Double> water= new ArrayList<Double>();
+        water.add(121.0);
+        water.add(225.5);
+        water.add(203.5);%>
+    <% ArrayList<Double> electric= new ArrayList<Double>();
+        electric.add(121.0);
+        electric.add(432.0);
+        electric.add(213.2);%>
+    <% ArrayList<Double> recycle= new ArrayList<Double>();
+        recycle.add(5401.0);
+        recycle.add(21.0);
+        recycle.add(68.0);%>
+    <% ArrayList<Double> carbonReductionRate= new ArrayList<Double>();
+        carbonReductionRate.add(79.0);
+        carbonReductionRate.add(19.0);
+        carbonReductionRate.add(23.0);%>
     <body>
-        <% ArrayList<String> resident= new ArrayList<String>();
-            resident.add("Tia");
-            resident.add("Suhaib");
-            resident.add("Yong");%>
-        <% ArrayList<String> location= new ArrayList<String>();
-            location.add("Taman Jelita");
-            location.add("Taman U");
-            location.add("Taman Wang");%>
-        <% ArrayList<Double> water= new ArrayList<Double>();
-            water.add(121.0);
-            water.add(225.5);
-            water.add(203.5);%>
-        <% ArrayList<Double> electric= new ArrayList<Double>();
-            electric.add(121.0);
-            electric.add(432.0);
-            electric.add(213.2);%>
-        <% ArrayList<Double> recycle= new ArrayList<Double>();
-            recycle.add(5401.0);
-            recycle.add(21.0);
-            recycle.add(68.0);%>
-        <% ArrayList<Double> carbonReductionRate= new ArrayList<Double>();
-            carbonReductionRate.add(79.0);
-            carbonReductionRate.add(19.0);
-            carbonReductionRate.add(23.0);%>
-            <div class="body">
+        <jsp:include page="header.jsp"/>
+            <div class="main-container">
+                <jsp:include page="userSideBar.jsp"/>
+                
+                <div class="container">
                 <div class="title">
-
                     <h2><U>Pertandingan Kalender Rendah Karbon Iskandar Puteri</U></h2>
                 </div>
                     <div class="subhead>">
                         <h4><p>Select top winners  for Pertandingan Kalendar Rendah Karbon Iskandar Puteri</p></h4>
                     </div>
-                    <div class="container">
+                  
                         <div class="content-box">
                             <h3>Overview</h3>
                             <hr>
@@ -103,11 +106,11 @@
                               </tr>
                           </table>
                         </div>
-                    </div>
-                    <div><button onclick="navigateToPage()">Select Winner</button>
+                        <div><button onclick="navigateToPage()">Select Winner</button></div>
+    
                     </div>
 
-            
+                </div>
             </div>
     
             <script>

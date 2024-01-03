@@ -14,9 +14,7 @@
         <style> 
 
         </style>
-    </head>
-    <body>
-        <% ArrayList<String> event= new ArrayList<String>();
+         <% ArrayList<String> event= new ArrayList<String>();
             event.add("Gerak Komuniti 3.0");
             event.add("Gerak Komuniti 2.0"); 
             event.add("Gerak Komuniti 1.0");%>
@@ -24,8 +22,13 @@
             eventdesc.add("Penawaran Geran ini bermula pada tahun 2021 dan diteruskan sehingga kini. Pada tahun 2021, Geran Komuniti Iskandar Puteri Rendah Karbon 1.0 menawarkan sehingga RM200,000.00, manakala penawaran Geran Komuniti Iskandar Puteri Rendah Karbon 2.0 dan 3.0 adalah pada RM500,000.00. ");
             eventdesc.add("Penawaran Geran ini bermula pada tahun 2021 dan diteruskan sehingga kini. Pada tahun 2021, Geran Komuniti Iskandar Puteri Rendah Karbon 1.0 menawarkan sehingga RM200,000.00, manakala penawaran Geran Komuniti Iskandar Puteri Rendah Karbon 2.0 dan 3.0 adalah pada RM500,000.00. "); 
             eventdesc.add("Penawaran Geran ini bermula pada tahun 2021 dan diteruskan sehingga kini. Pada tahun 2021, Geran Komuniti Iskandar Puteri Rendah Karbon 1.0 menawarkan sehingga RM200,000.00, manakala penawaran Geran Komuniti Iskandar Puteri Rendah Karbon 2.0 dan 3.0 adalah pada RM500,000.00. ");%>        
-      
-            <div class="body">
+    </head>
+    <body>
+       
+            <jsp:include page="header.jsp" />
+            <div class="main-container">
+                <jsp:include page="userSideBar.jsp" />
+                <div class="container">
                 <div class="title">
 
                     <h2><U>Timeline</U></h2>
@@ -38,7 +41,7 @@
 
                     </div>
                 </div>
-                    <div class="container">
+                    
 
                         <div class="infotable">
                             <table>
@@ -143,7 +146,6 @@
                         <button onclick="closeModal()">Close</button>
                     </div>
             </div>
-    
             <script>
             function openModal() {
                         document.getElementById('myModal').style.display = 'block';

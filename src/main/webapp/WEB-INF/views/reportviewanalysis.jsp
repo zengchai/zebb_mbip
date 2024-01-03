@@ -12,24 +12,25 @@
         <link rel="stylesheet" type="text/css" href="/css/reportviewanalysis.css">
         <style> </style>
     </head>
+    <% ArrayList<String> consumption= new ArrayList<String>();
+        consumption.add("Water(L)");
+        consumption.add("Electricity(kWh)");
+        consumption.add("Recycle(kg)");
+        consumption.add("Participation(people)");%>
+    <% ArrayList<Double> consumptionvalue= new ArrayList<Double>();
+        consumptionvalue.add(240.65);
+        consumptionvalue.add(245.21);
+        consumptionvalue.add(54.00);
+        consumptionvalue.add(114.00);%>
     <body>
-        <% ArrayList<String> consumption= new ArrayList<String>();
-            consumption.add("Water(L)");
-            consumption.add("Electricity(kWh)");
-            consumption.add("Recycle(kg)");
-            consumption.add("Participation(people)");%>
-        <% ArrayList<Double> consumptionvalue= new ArrayList<Double>();
-            consumptionvalue.add(240.65);
-            consumptionvalue.add(245.21);
-            consumptionvalue.add(54.00);
-            consumptionvalue.add(114.00);%>
-            <div class="body">
+        <jsp:include page="header.jsp" />
+        <div class="main-container">
+            <jsp:include page="userSideBar.jsp" />
+            <div class="container">
+            
                 <div class="title">
-
                     <h2><U>Carbon Calculation</U></h2>
                 </div>
-
-                    <div class="container">
                         <div class="infotable">
                             <table>
                                 <tr>
@@ -99,5 +100,6 @@
                         </div>
                     </div>
             </div>
+        </div>
         </body>
 </html>
