@@ -3,16 +3,25 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="/css/editprofile.css">
+        <link rel="stylesheet" href="/css/general.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home</title>
     </head>
     <body>
-        <div>
-            <form>
+        <jsp:include page="header.jsp" />
+
+        <div class="main-container">
+            <jsp:include page="userSideBar.jsp" />
+    
+            <!-- Main Content Section -->
+            <div class='main-content-container'>
                 <div class="body-container">
                     <div class="main-title">
                         Edit Profile
                     </div>
+                    <form>
                     <div>
                         <div class="title">
                             Full Name
@@ -35,7 +44,7 @@
                             <input type="text" id="email" name="email"/>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="rows">
                     <div class="column">
                         <div>
                             <div class="title">Phone Number</div>
@@ -82,7 +91,9 @@
                     <div class="center">
                         <button class="submitbutton">submit</button>
                     </div>
-                </div></form>
-            </div>
+                </form>
+                </div>
+        </div>
+    </div>
     </body>
 </html>

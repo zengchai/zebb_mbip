@@ -1,19 +1,27 @@
 .body-container{
-    display: inline-block;
+    display: block;
     padding: 1rem;
+    width: 40rem;
 }
 
-.row{
+.main-container {
     display: flex;
+    flex-direction: row;
+}
+
+.main-content-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.rows{
+    display: flex;
+    justify-content: space-between;
 }
 
 .title{
     margin: 1rem 0;
-}
-
-.row{
-    display: flex;
-    gap: 3rem;
 }
 
 input{
