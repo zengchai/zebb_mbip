@@ -15,15 +15,15 @@
         <style>
         </style>
 </head>
-
 <body>
-
-    <div class="body">
-        <div class="title">
-            <h2><U>Carbon Calculation</U></h2>
-        </div>
-
+    <jsp:include page="header.jsp" />
+    <div class="main-container">
+        <jsp:include page="userSideBar.jsp" />
         <div class="container">
+            <div class="title">
+                <h2><u>Carbon Calculation</u></h2>
+            </div>
+        
             <div class="carbon">
                 <h4><u>Carbon Reduction Rate Formula</u></h4>
                 <div class="formula">
@@ -37,27 +37,31 @@
                     </div>
                 </div>
             </div>
-            <div class="water">
-                <h4><u>Water Consumption Formula</u></h4>
+        
+            <div class="third-row">
+                <div class="water">
+                    <h4><u>Water Consumption Formula</u></h4>
+                    <div class="wformula">
+                        <p>{Water Consumption}m<sup>3</sup> x 0.419kgCo<sub>2</sub>/m<sup>3</sup></p>
+                    </div>
+                    <br>
+                    <div class="wans">
+                        Carbon factor: 1m<sup>3</sup>+0.419<br>
+                    </div>
+                </div>
 
-                <div class="wformula">
-                    <p>{Water Consumption}m<sup>3</sup> x 0.419kgCo<sub>2</sub>/m<sup>3</sup></p>
-                </div>
-                <br>
-                <div class="wans">
-                    Carbon factor: 1m<sup>3</sup>+0.419<br>
-                </div>
-            </div>
-            <div class="electric">
-                <h4><u>Electric Consumption Formula</u></h4>
-                <div class="eformula">
-                    <p>{Electricity Consumption}kWh x <br>0.548 kgCO<sub>2</sub>/ kWh</p>
-                </div>
-                <br>
-                <div class="eans">
-                    Carbon factor: 1 KWh = 0.584
+                <div class="electric">
+                    <h4><u>Electric Consumption Formula</u></h4>
+                    <div class="eformula">
+                        <p>{Electricity Consumption}kWh x <br>0.548 kgCO<sub>2</sub>/ kWh</p>
+                    </div>
+                    <br>
+                    <div class="eans">
+                        Carbon factor: 1 KWh = 0.584
+                    </div>
                 </div>
             </div>
+
             <div class="recycle">
                 <h4><u>Recycle Activity Formula</u></h4>
                 <div class="rformula">
@@ -68,9 +72,10 @@
                     Carbon factor: 1 Kg = 0.286
                 </div>
             </div>
-        </div>
+        
         <div class="button-container">
             <button class="calculate-button" onclick="location.href='calculate-page.html'">Calculate</button>
+        </div>
         </div>
     </div>
 </body>

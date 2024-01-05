@@ -1,16 +1,37 @@
-table{            
+.main-container {
+    display: flex;
+    flex-direction: row;
+}
+body {
+    margin: 0;
+    padding: 0;
+} 
+.container {
+    /* width: 640px; 
+    max-width: 100%; Ensure it doesn't exceed the specified width */
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+table {
     width: 100%;
     border-collapse: separate;
     border-spacing: 0;
-    border: 0.01rem solid#000;
+    border: 0.01rem solid #000;
 }
-th{
-   background-color: #DDEBE6;
-   border-bottom: 0.01rem solid #000; 
+
+th {
+    background-color: #DDEBE6;
+    border: 0.01rem solid #000;
 }
-td{
-    border:0.0rem solid #000;
+
+td {
+    border-right: 0.01rem solid #000; /* Add right border for td elements */
     padding: 10px;
+}
+
+td:last-child {
+    border-right: none; /* Remove right border for the last column in each row */
 }
 h4 {
 font-weight: normal; /* or use font-weight: 400; */
@@ -18,19 +39,6 @@ font-weight: normal; /* or use font-weight: 400; */
 
 h3{
     margin: 0rem;
-}
-body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: left;
-    justify-content: center;
-    height: 680px; /* Set the desired height */
-}
-
-.container {
-    width: 640px; /* Set the desired width */
-    max-width: 100%; /* Ensure it doesn't exceed the specified width */
 }
 
 .content-box {

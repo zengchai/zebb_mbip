@@ -38,7 +38,10 @@
             carbonReductionRate.add(79.0);
             carbonReductionRate.add(19.0);
             carbonReductionRate.add(23.0);%>
-            <div class="body">
+            <jsp:include page="header.jsp" />
+            <div class="main-container">
+                <jsp:include page="userSideBar.jsp" />
+                <div class="container">
                 <div class="title">
 
                     <h2><U>Pertandingan Kalender Rendah Karbon Iskandar Puteri</U></h2>
@@ -98,7 +101,7 @@
                     </div>
                     <div><button onclick="showPopup()" style="align-items:center ;">confirm</button>
                     </div>
-
+                </div>
             
             </div>
     

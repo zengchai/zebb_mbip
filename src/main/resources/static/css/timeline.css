@@ -1,3 +1,17 @@
+.main-container {
+    display: flex;
+    flex-direction: row;
+}
+body {
+    margin: 0;
+    padding: 0;
+} 
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
 table{            
     width: 100%;
     border-collapse: separate;
@@ -22,19 +36,6 @@ h3{
     margin: 0rem;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: left;
-    justify-content: center;
-    height: 680px; /* Set the desired height */
-}
-
-.container {
-    width: 640px; /* Set the desired width */
-    max-width: 100%; /* Ensure it doesn't exceed the specified width */
-}
 
 .infotable{
     margin-top: 2rem;
