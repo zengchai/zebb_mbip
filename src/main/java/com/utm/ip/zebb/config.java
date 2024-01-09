@@ -1,4 +1,4 @@
-package com.utm.ip.zebb.serverController;
+package com.utm.ip.zebb;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -10,9 +10,9 @@ public class config {
     private DriverManagerDataSource dataSource() {
     DriverManagerDataSource source =  new DriverManagerDataSource();
     source.setDriverClassName("com.mysql.cj.jdbc.Driver");
-    source.setUrl("jdbc:mysql://localhost:3306/zebb_yam");
+    source.setUrl("jdbc:mysql://localhost:3306/mydb");
     source.setUsername("root");
-    source.setPassword("admin");
+    source.setPassword("aeiou12345");
     return source;
     }
     @Bean
